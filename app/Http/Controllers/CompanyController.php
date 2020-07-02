@@ -49,7 +49,7 @@ class CompanyController extends Controller
 
     public function show(Company $company)
     {
-        return $company;
+        return response()->json($company, 200);
     }
 
     public function edit(Company $company)
@@ -78,9 +78,9 @@ class CompanyController extends Controller
 
         if($request->hasFile('logo')){
 
-            $path = $request->file('logo')->store('public/logo');
+            $path = $request->file('logo')->store('clogo');
 
-            $c->where('id',$company->id)->update(['logo'=>$request->logo->getClientOriginalName()]);
+            $c->where('id',$company->id)->update(['logo'=>$path]);
         }
     }
 

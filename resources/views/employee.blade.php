@@ -33,8 +33,8 @@
                     			<td>{{ $data['email'] }}</td>
                                 <td>{{ $data['phone'] }}</td>
                     			<td>
-                    				<button class="btn btn-secondary" style="margin-right: 5px;" type="button" onclick="editemployee('{{ $data['id'] }}')">Edit</button>
-                    				<button class="btn btn-danger" type="button" onclick="deleteemployee('{{ $data['id'] }}')">Delete</button>
+                    				<button class="btn btn-secondary" type="button" onclick="editemployee('{{ $data['id'] }}')">Edit</button>
+                    				<button class="btn btn-danger" type="button" onclick="deleteemployee('{{ $data['id'] }}')" style="float: right;">Delete</button>
                     			</td>
                     		</tr>
                     		@endforeach

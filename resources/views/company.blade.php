@@ -39,8 +39,8 @@
                     			<td class="logo_col" style="background-image: url({{ asset('storage/'.$dat['logo']) }});"></td>
                     			<td>{{ $dat['website'] }}</td>
                     			<td>
-                    				<button class="btn btn-secondary" style="margin-right: 5px;" type="button" onclick="editcompany('{{ $dat['id'] }}')">Edit</button>
-                    				<button class="btn btn-danger" type="button" onclick="deletecompany('{{ $dat['id'] }}')">Delete</button>
+                    				<button class="btn btn-secondary" type="button" onclick="editcompany('{{ $dat['id'] }}')">Edit</button>
+                    				<button class="btn btn-danger" type="button" onclick="deletecompany('{{ $dat['id'] }}')" style="float: right;">Delete</button>
                     			</td>
                     		</tr>
                     		@endforeach

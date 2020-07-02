@@ -6,11 +6,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Companies</div>
+                <div class="card-header">Welcome</div>
 
                 <div class="card-body">
-                    <a href="{{ url('employee') }}">View Employees</a><br><br>
-                    <a href="{{ url('company') }}">View Companies</a>
+                    <p>Welcome, you are logged in!</p>
                 </div>
             </div>
         </div>
